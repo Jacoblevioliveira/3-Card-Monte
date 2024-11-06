@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Card Monte Game - JavaScript Version 3</title>
+    <link rel="stylesheet" href="style_v4.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Card Selection Game!</h1>
+        <p id="instruction">Click "Reveal" to start!</p>
+        <div class="card-container">
+            <!-- Card structure for flipping effect -->
+            <div class="card" id="card1">
+                <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back"></div>
+                </div>
+            </div>
+            <div class="card" id="card2">
+                <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back"></div>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back"></div>
+                </div>
+            </div>
+        </div>
+        <button id="action-button">Reveal Cards</button>
+        <p id="result"></p>
+
+        <!-- Inline question container within game container -->
+        <div id="question-container" class="hidden">
+            <h2>Why did you choose this card?</h2>
+            <div class="options">
+                <label><input type="radio" name="choiceReason" value="random"> My choice was random</label><br>
+                <label><input type="radio" name="choiceReason" value="skill"> I followed the cards with skill</label><br>
+                <label><input type="radio" name="choiceReason" value="unsure"> I’m not sure why I made this choice</label>
+            </div>
+            <button id="submit-answer-button">Submit Answer</button>
+        </div>
+    </div>
+
+    <!-- Link to the main JavaScript file -->
+    <script src="game_v4.js"></script>
+</body>
+</html>
